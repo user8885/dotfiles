@@ -1,0 +1,25 @@
+// -*- mode: jsonc -*-
+{
+    "position": "top", // Waybar position (top|bottom|left|right)
+
+    "include": [
+      "$HOME/.config/waybar/Modules.jsonc"
+    ],
+
+    // Choose the order of the modules
+    "modules-left": [
+      "custom/rofi",
+      "custom/seperator",
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "custom/wttr"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "custom/seperator",
+      "clock",
+      "custom/seperator",
+      "custom/swaync"
+    ]
+}

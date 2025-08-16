@@ -1,0 +1,138 @@
+@import url("./colors/dracula.css");
+
+* {
+  font-family:   "JetBrainsMono Nerd Font";
+  font-weight:   bold;
+  font-size:     12px;
+  box-shadow:    none;
+  text-shadow:   none;
+  transition-duration: 0s;
+  padding: 0 5px;
+  margin: 4px 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @fg;
+}
+
+.modules-left {
+  margin-left: 10px;
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 10px;
+}
+.modules-center {
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 10px;
+}
+.modules-right {
+  margin-right: 10px;
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 10px;
+}
+
+#window {
+  color: @c1;
+}
+
+
+#workspaces {
+    padding: 0 1px;
+    margin: 0 1px;
+}
+
+#workspaces button {
+    color:      @fg;
+}
+
+#workspaces button.visible {
+    color:      @pri;
+    background: @bg-alt;
+}
+
+#workspaces button.urgent {
+    color:      @c1;
+}
+
+#network {
+  color: @fg;
+}
+
+#clock {
+  color: @c6;
+  min-width:  140px;
+}
+
+#idle_inhibitor {
+  min-width: 25px;
+  color: @pri;
+}
+
+#pulseaudio {
+  color: @c7;
+}
+
+#cpu {
+  color: @fg;
+}
+
+#memory {
+  color: @fg;
+}
+
+#disk{
+  color: @c6;
+}
+
+#temperature {
+  color: @c1;
+}
+
+#custom-logout {
+  color: @c1;
+}
+
+#custom-kernel {
+    color: @c1;
+}
+
+
+#custom-kill_window {
+  color: @c1;
+}
+
+#custom-rofi {
+  color: @c5;
+  font-size: 20px;
+  padding: 0 12px;
+}
+
+#custom-hyprversion {
+  color: @fg;
+  padding-left: 7px;
+}
+
+#custom-seperator {
+  color: @com;
+  padding: 0 1px;
+  margin: 0 1px;
+}
+
+#custom-updates {
+  color: @fg;
+}
+
+#tray {
+}
+
+#custom-swaync {
+  min-width: 20px;
+  color: @pri;
+}
+
+#custom-spotify {
+  color: @c4;
+}

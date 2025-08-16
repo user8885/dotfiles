@@ -1,0 +1,5 @@
+DMENU="${HOME}/.config/rofi/dmenu"
+DMLOCK="hyprlock"
+DMBROWSER="brave"
+DMEDITOR="ghostty -e ${EDITOR}"
+DMTERM="ghostty"

@@ -1,0 +1,148 @@
+@import url("./colors/dracula.css");
+
+* {
+    font-family:   "JetBrainsMono Nerd Font";
+    font-weight:   bold;
+    font-size:     12px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+    padding: 0 5px;
+    margin: 2px 0;
+}
+
+window#waybar {
+  background: @bg;
+  opacity: 0.95;
+  color: @fg;
+}
+
+.modules-left {
+
+}
+.modules-center {
+
+}
+.modules-right {
+
+}
+
+#window {
+  color: @c1;
+}
+
+
+#workspaces {
+    padding: 0 1px;
+    margin: 0 1px;
+}
+
+#workspaces button {
+    color:      @fg;
+}
+
+#workspaces button.visible {
+    color:      @pri;
+    background: @bg-alt;
+}
+
+#workspaces button.urgent {
+    color:      @c1;
+}
+
+/*
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight { 
+    margin:     0px 0px 0px 0px;
+    min-width:  25px;
+}
+*/
+
+#network {
+  color: @c4;
+}
+
+#clock {
+  color: @pri;
+  min-width:  140px;
+}
+
+#idle_inhibitor {
+  min-width: 25px;
+  color: @c6;
+}
+
+#pulseaudio {
+  color: @sec;
+}
+
+#cpu {
+  border: 1px solid @pri;
+  border-radius: 10px;
+  color: @pri;
+}
+
+#memory {
+  color: @c4;
+  border: 1px solid @c4;
+  border-radius: 10px;
+}
+
+#disk{
+  color: @c6;
+  border: 1px solid @c6;
+  border-radius: 10px;
+}
+
+#temperature {
+  color: @c1;
+  border: 1px solid @c1;
+  border-radius: 10px;
+}
+
+#custom-logout {
+  color: @c1;
+  border: 1px solid @c1;
+  border-radius: 10px;
+}
+
+#custom-kernel {
+    color: @c1;
+}
+
+
+#custom-kill_window {
+  color: @c1;
+}
+
+#custom-rofi {
+  color: @c5;
+  font-size: 20px;
+  padding: 0 2px;
+}
+
+#custom-hyprversion {
+  color: @pri;
+  padding-left: 7px;
+}
+
+#custom-seperator {
+  color: @com;
+}
+
+#custom-updates {
+  color: @c7;
+  border: 1px solid @c7;
+  border-radius: 10px;
+}
+
+#tray {
+}
+
+#custom-swaync {
+  min-width: 20px;
+  color: @pri;
+}
+
+#custom-spotify {
+  color: @c4;
+}
