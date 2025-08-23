@@ -38,8 +38,8 @@
  "idle_inhibitor": {
      "format": "{icon}",
      "format-icons": {
-         "activated": " on",
-         "deactivated": " off"
+         "activated": " ",
+         "deactivated": " "
      }
  },
 
@@ -178,6 +178,7 @@
  "custom/wttr": {
    "tooltip": false,
    "exec": "curl -s wttr.in/Parkersburg?format=1",
+   "on-click": "wttr-as-png.sh",
    "interval": 1800
  }
 }

@@ -42,6 +42,7 @@ alias y='yazi'
 alias b="btop"
 alias nv="nvtop"
 alias pm="pulsemixer"
+alias ac="ani-cli -v"
 
 #Lazy alias
 alias conf='source ~/.bashrc'
@@ -101,6 +102,7 @@ alias pas='paru -S'
 
 alias p='sudo pacman'
 alias ps='sudo pacman -S'
+alias pss='sudo pacman -Ss'
 alias pq='pacman -Q'
 alias pr='sudo pacman -Rns --unneeded'
 alias psyu='sudo pacman -Syu'
@@ -110,10 +112,7 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)
 
 # get fastest mirrors
-alias pacmirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias pacmirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias pacmirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias pacmirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias pacmirror="sudo reflector --country us --fastest 10 --latest 20 --protocol 'https,http' --verbose --save /etc/pacman.d/mirrorlist"
 
 # nala for Debian/Ubuntu
 alias apt="sudo nala"

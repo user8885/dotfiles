@@ -16,6 +16,8 @@
       "custom/wttr"
     ],
     "modules-right": [
+      "idle_inhibitor",
+      "custom/seperator",
       "pulseaudio",
       "custom/seperator",
       "clock",

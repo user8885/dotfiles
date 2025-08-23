@@ -2,13 +2,12 @@
 
 * {
     font-family:   "JetBrainsMono Nerd Font";
-    font-weight:   bold;
     font-size:     12px;
     box-shadow:    none;
     text-shadow:   none;
     transition-duration: 0s;
     padding: 0 5px;
-    margin: 2px 0;
+    margin: 1px 0;
 }
 
 window#waybar {
@@ -67,8 +66,7 @@ window#waybar {
 }
 
 #idle_inhibitor {
-  min-width: 25px;
-  color: @c6;
+  color: @c1;
 }
 
 #pulseaudio {
@@ -140,9 +138,14 @@ window#waybar {
 
 #custom-swaync {
   min-width: 20px;
-  color: @pri;
+  color: @c7;
 }
 
 #custom-spotify {
   color: @c4;
+}
+
+#custom-wttr {
+  padding-top: 5px;
+  color: @c3;
 }

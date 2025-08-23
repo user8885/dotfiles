@@ -3,8 +3,9 @@
 #xwaylandvideobridge --qwindowtitle xwlvb &
 #/usr/lib/polkit-kde-authentication-agent-1 &
 /usr/lib/xdg-desktop-portal-hyprland &
-
+hypridle &
 wlsunset.sh &
+
 hyprpaper &
 waybar &
 swaync &
