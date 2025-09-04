@@ -10,7 +10,9 @@
     "modules-left": [
       "custom/rofi",
       "custom/seperator",
-      "hyprland/workspaces"
+      "hyprland/workspaces",
+      "custom/seperator",
+      "hyprland/window"
     ],
     "modules-center": [
       "custom/wttr"
@@ -21,6 +23,8 @@
       "pulseaudio",
       "custom/seperator",
       "clock",
+      "custom/seperator",
+      "tray",
       "custom/seperator",
       "custom/swaync"
     ]

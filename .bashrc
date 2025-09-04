@@ -75,8 +75,9 @@ alias la='ls -A'
 alias l="ls -l"
 
 # (neo)vim
-alias v="$EDITOR"
-alias sv="sudo $EDITOR"
+alias v="nvim"
+alias v.="nvim ."
+alias sv="sudo nvim"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -97,8 +98,8 @@ alias fup="flatpak update"
 alias xway="env -u WAYLAND_DISPLAY"
 
 # package managment
-alias pa='paru'
-alias pas='paru -S'
+alias pa='yay'
+alias pas='yay -S'
 
 alias p='sudo pacman'
 alias ps='sudo pacman -S'

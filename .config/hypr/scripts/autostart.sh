@@ -12,12 +12,15 @@ swaync &
 
 sleep 1
 
+mullvad-vpn &
 qbittorrent &
 #nm-applet &
 #blueman-applet &
 
 steam &
 brave &
+spotify &
+ghostty --title="autostartTerm"
 
 disown
 
