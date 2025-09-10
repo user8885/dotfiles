@@ -1,3 +1,0 @@
-require "mini.pick".setup()
-
-vim.keymap.set("n", "<leader>h", ":Pick help<CR>")

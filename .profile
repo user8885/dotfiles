@@ -1,10 +1,4 @@
-
 export EDITOR='nvim'
-export TERMINAL_EMULATOR="kitty"
-
-export PATH=$HOME/.local/bin:$HOME/scripts/dm-scripts:$PATH
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA_HOME=$HOME/.local/share
 
 export QT_QPA_PLATFORMTHEME=qt6ct # Only use when not using kde or anything that configures qt on its own
 

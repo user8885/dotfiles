@@ -1,3 +1,14 @@
+addToPATH() {
+   export PATH=$1:$PATH
+}
+addToPATH ~/.config/emacs/bin
+addToPATH ~/.local/bin
+addToPATH ~/scripts/dm-scripts
+
+# VI-Mode
+unset -f __main
+set -o vi
+
 # DT color scripts
 colorscript random
 
@@ -19,10 +30,6 @@ __main
 
 # zoxide is better
 eval "$(zoxide init bash)"
-
-# VI-Mode
-unset -f __main
-set -o vi
 
 # main aliases
 alias lua_hw="cd ~/Projects/lua/hello_world/"
@@ -50,7 +57,7 @@ alias c="clear"
 alias n="c && colorscript random"
 alias ff="c && fastfetch"
 alias fu="c && uwufetch"
-alias wttr="curl wttr.in/Parkersburg"
+alias wttr="curl wttr.in/Parkersburg?u"
 
 alias cp='cp -i'
 alias cpd='cp -r'
@@ -69,23 +76,17 @@ alias mk="rm config.h && make && sudo make install"
 
 # ls
 alias ls='eza --group-directories-first'
-alias ll="ls -Al"
-alias l.='ls -A | egrep "^\."'
+alias ll="ls -Ahl"
+alias l="ls -lh"
+alias l.='ls -A | grep -E "^\."'
 alias la='ls -A'
-alias l="ls -l"
 
 # (neo)vim
 alias v="nvim"
 alias v.="nvim ."
 alias sv="sudo nvim"
 
-# Colorize grep output (good for log files)
 alias grep='grep --color=auto'
-alias egrep='grep -E'
-alias fgrep='grep -F'
-alias rep='grep -i --color=auto'
-alias erep='rep -E'
-alias frep='rep -F'
 
 ## History & Grep
 alias hg="history | grep"
@@ -98,35 +99,16 @@ alias fup="flatpak update"
 alias xway="env -u WAYLAND_DISPLAY"
 
 # package managment
-alias pa='yay'
-alias pas='yay -S'
+alias pa='paru'
+alias pas='paru -S'
 
 alias p='sudo pacman'
 alias ps='sudo pacman -S'
-alias pss='sudo pacman -Ss'
 alias pq='pacman -Q'
 alias pr='sudo pacman -Rns --unneeded'
-alias psyu='sudo pacman -Syu'
-alias psyua='pa -Syua'
 
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)
 
 # get fastest mirrors
-alias pacmirror="sudo reflector --country us --fastest 10 --latest 20 --protocol 'https,http' --verbose --save /etc/pacman.d/mirrorlist"
-
-# nala for Debian/Ubuntu
-alias apt="sudo nala"
-
-# git
-alias config="git --git-dir=$HOME/git/config_bare --work-tree=$HOME"
-
-alias init="git init"
-alias commit="git commit"
-alias push="git push -u origin main"
-alias add="git add"
-alias checkout="git checkout"
-alias status="git status"
-
-alias pull="git pull"
-alias clone="git clone"
+alias pacmirror="sudo reflector --country us --fastest 10 --latest 20 --protocol 'https' --verbose --save /etc/pacman.d/mirrorlist"
