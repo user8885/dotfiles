@@ -24,3 +24,4 @@ o.termguicolors = true
 o.updatetime = 50
 o.winborder = "rounded"
 o.scrolloff = 7
+o.colorcolumn = "120"

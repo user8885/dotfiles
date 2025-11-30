@@ -179,6 +179,6 @@
    "tooltip": false,
    "exec": "curl -s 'wttr.in/Parkersburg?u&format=1'",
    "on-click": "wttr-as-png.sh",
-   "interval": 1800
+   "interval": 1800,
  }
 }

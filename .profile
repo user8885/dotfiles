@@ -1,6 +1,6 @@
 export EDITOR='nvim'
 
-export QT_QPA_PLATFORMTHEME=qt6ct # Only use when not using kde or anything that configures qt on its own
+#export QT_QPA_PLATFORMTHEME=qt6ct # Only use when not using kde or anything that configures qt on its own
 
 export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS # Just for flatpak
 

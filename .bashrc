@@ -4,6 +4,7 @@ addToPATH() {
 addToPATH ~/.config/emacs/bin
 addToPATH ~/.local/bin
 addToPATH ~/scripts/dm-scripts
+addToPATH ~/.zig
 
 # VI-Mode
 unset -f __main
