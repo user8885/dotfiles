@@ -1,3 +1,7 @@
+if [[ -f /etc/bashrc ]]; then
+    source /etc/bashrc
+fi
+
 addToPATH() {
    export PATH=$1:$PATH
 }
@@ -64,8 +68,8 @@ alias cp='cp -i'
 alias cpd='cp -r'
 alias rmd='rm -r'
 
-alias cd='z'
-alias cdi='zi'
+#alias cd='z'
+#alias cdi='zi'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
