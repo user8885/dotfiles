@@ -15,10 +15,9 @@ unset -f __main
 set -o vi
 
 # DT color scripts
-colorscript random
+#colorscript random
 
-# fastfetch
-#fastfetch
+fastfetch
 
 # Starship
 __main() {
@@ -36,7 +35,6 @@ __main
 # zoxide is better
 eval "$(zoxide init bash)"
 
-# main aliases
 alias lua_hw="cd ~/Projects/lua/hello_world/"
 alias py_hw="cd ~/Projects/python/hello_world/"
 alias dev="${TERMINAL_EMULATOR} &"
@@ -48,28 +46,39 @@ alias hore="pushd ~/nix && git add -A && home-manager switch --flake ~/nix/ && p
 alias allre="nixresw && hore"
 alias allrebo="nixrebo && hore"
 
-# quick launch
+alias xway="env -u WAYLAND_DISPLAY"
+
 alias blt='bluetoothctl'
 alias y='yazi'
 alias b="btop"
 alias nv="nvtop"
 alias pm="pulsemixer"
 alias ac="ani-cli -v"
+alias db="distrobox"
+alias v="nvim"
+alias v.="nvim ."
+alias sv="sudo nvim"
 
 #Lazy alias
+alias grep='grep --color=auto'
+alias hg="history | grep"
 alias conf='source ~/.bashrc'
 alias c="clear"
 alias n="c && colorscript random"
 alias ff="c && fastfetch"
 alias fu="c && uwufetch"
 alias wttr="curl wttr.in/Parkersburg?u"
+alias mk="rm config.h && make && sudo make install"
 
 alias cp='cp -i'
 alias cpd='cp -r'
 alias rmd='rm -r'
 
-#alias cd='z'
-#alias cdi='zi'
+
+if [ -z "${CONTAINER_ID}" ]; then
+    alias cd='z'
+    alias cdi='zi'
+fi
 alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
@@ -77,43 +86,28 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 alias .6='cd ../../../../../..'
 
-alias mk="rm config.h && make && sudo make install"
-
 # ls
-alias ls='eza --group-directories-first'
+if [ -z "${CONTAINER_ID}" ]; then
+    alias ls="eza --group-directories-first"
+else
+    alias ls='ls --group-directories-first'
+fi
 alias ll="ls -Ahl"
 alias l="ls -lh"
 alias l.='ls -A | grep -E "^\."'
 alias la='ls -A'
 
-# (neo)vim
-alias v="nvim"
-alias v.="nvim ."
-alias sv="sudo nvim"
 
-alias grep='grep --color=auto'
-
-## History & Grep
-alias hg="history | grep"
-
-## Flatpak
-alias f="flatpak"
-alias fup="flatpak update"
-
-## Wayland stuff
-alias xway="env -u WAYLAND_DISPLAY"
-
-# package managment
+# Arch linux things
 alias pa='paru'
 alias pas='paru -S'
-
+##
 alias p='sudo pacman'
 alias ps='sudo pacman -S'
 alias pq='pacman -Q'
 alias pr='sudo pacman -Rns --unneeded'
-
+##
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)
-
-# get fastest mirrors
+##
 alias pacmirror="sudo reflector --country us --fastest 10 --latest 20 --protocol 'https' --verbose --save /etc/pacman.d/mirrorlist"
