@@ -110,8 +110,8 @@
          "car": "",
          "default": ["", "", ""]
      },
-     "on-click": "pavucontrol",
-     "on-click-right": "pamixer -t"
+     "on-click": "ghostty -e pulsemixer",
+     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
  },
 
  "disk": {

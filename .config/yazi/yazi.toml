@@ -30,7 +30,7 @@ edit = [
 	{ run = 'sudo $EDITOR "$@"', desc = "$EDITOR (as root)", block = true, for = "unix" },
 ]
 open = [
-	{ run = 'qimgv "$@"',               orphan = true, desc = "Open", for = "linux" },
+	{ run = 'imv "$@"',               orphan = true, desc = "Open", for = "linux" },
 	{ run = 'sw "$@"',                   orphan = true, desc = "Set Wallpaper", for = "linux" },
 ]
 reveal = [

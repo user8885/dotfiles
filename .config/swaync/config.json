@@ -2,92 +2,90 @@
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionX": "right",
   "positionY": "top",
-  "layer": "overlay",
+  "layer": "top",
   "control-center-layer": "top",
-  "layer-shell": true,
-  "layer-shell-cover-screen": false,
-  "cssPriority": "application",
-  "control-center-margin-top": 0,
-  "control-center-margin-bottom": 0,
-  "control-center-margin-right": 5,
-  "control-center-margin-left": 5,
-  "notification-2fa-action": true,
-  "notification-inline-replies": false,
-  "notification-icon-size": 64,
-  "notification-body-image-height": 200,
-  "notification-body-image-width": 200,
   "timeout": 10,
   "timeout-low": 5,
   "timeout-critical": 0,
-  "fit-to-screen": false,
-  "relative-timestamps": true,
-  "control-center-width": 500,
-  "control-center-height": 600,
   "notification-window-width": 400,
   "keyboard-shortcuts": true,
-  "image-visibility": "when-available",
+  "image-visibility": "always",
   "transition-time": 200,
   "hide-on-clear": true,
   "hide-on-action": true,
-  "text-empty": "No Notifications",
-  "script-fail-notify": true,
-  "scripts": {
-    "example-script": {
-      "exec": "echo 'Do something...'",
-      "urgency": "Normal"
-    },
-    "example-action-script": {
-      "exec": "echo 'Do something actionable!'",
-      "urgency": "Normal",
-      "run-on": "action"
-    }
-  },
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 0,
+  "control-center-width": 600,
+  "control-center-height": 600,
+  "notification-window-width": 500,
   "notification-visibility": {
-    "spotfiy": {
+    "Cider": {
       "state": "muted",
       "urgency": "Low",
-      "app-name": "Spotify"
+      "app-name": "Cider"
+    },
+    "cider": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "cider"
+    },
+    "Cider2": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Cider2"
+    },
+    "cider2": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "cider2"
     }
   },
   "widgets": [
-    "inhibitors",
-    "title",
+    "menubar",
     "dnd",
-    "notifications"
+    "notifications",
+    "mpris"
   ],
   "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
-    "title": {
-      "text": "Notifications",
-      "clear-all-button": true,
-      "button-text": "Clear All"
-    },
-    "dnd": {
-      "text": "Do Not Disturb"
-    },
-    "label": {
-      "max-lines": 5,
-      "text": "Label Text"
-    },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12,
-      "blacklist": []
+      "image-radius": 12
     },
-    "buttons-grid": {
-      "actions": [
-        {
-          "label": "直",
-          "type": "toggle",
-          "active": true,
-          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
-          "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
-        }
-      ]
+    "menubar": {
+      "label": "Notifications",
+      "menu#power-buttons": {
+        "label": "⏼",
+        "position": "right",
+        "actions": [
+          {
+            "label": "   Reboot",
+            "command": "systemctl reboot"
+          },
+          {
+            "label": "   Lock",
+            "command": "swaylock -f --image ~/.config/wallpapers/snow_woods.jpg"
+          },
+          {
+            "label": "   Shut down",
+            "command": "systemctl poweroff"
+          }
+        ]
+      },
+      "buttons#topbar-buttons": {
+        "position": "left",
+        "actions": [
+          {
+            "label": "",
+            "command": "easyeffects"
+          },
+          {
+            "label": "🗑",
+            "command": "swaync-client -C"
+          }
+        ]
+      }
     }
   }
 }

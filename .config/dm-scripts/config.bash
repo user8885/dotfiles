@@ -1,5 +1,5 @@
-DMENU="${HOME}/.config/rofi/dmenu"
-DMLOCK="hyprlock"
-DMBROWSER="brave"
+DMENU="rofi -dmenu"
+DMLOCK="swaylock -l -i ~/.config/wallpaper"
+DMBROWSER="floorp"
 DMEDITOR="ghostty -e ${EDITOR}"
 DMTERM="ghostty"
