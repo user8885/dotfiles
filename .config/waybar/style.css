@@ -2,20 +2,21 @@
 
 * {
     font-family:   "JetBrainsMono Nerd Font";
-    font-size:     12px;
+    font-size:     14px;
     box-shadow:    none;
     text-shadow:   none;
     transition-duration: 0s;
-    padding: 0 5px;
-    margin: 1px 0;
+    padding: 0 2px;
+    margin-top: 1px;
 }
 
 window#waybar {
-  background: @bg;
-  opacity: 0.95;
+  background: transparent;
+  opacity: 0.65;
   color: @fg;
 }
 
+/*
 .modules-left {
 
 }
@@ -25,24 +26,49 @@ window#waybar {
 .modules-right {
 
 }
+*/
+
+.modules-left {
+  margin-left: 5;
+  padding-right: 10px;
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 13px;
+}
+.modules-center {
+  padding: 0 10px;
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 13px;
+}
+.modules-right {
+  margin-right: 5;
+  padding: 0 10px;
+  background: @bg;
+  border: 1px solid @pri;
+  border-radius: 13px;
+}
+
 
 #window {
-  color: @c1;
+  color: @fg;
 }
 
 
 #workspaces {
-    padding: 0 1px;
-    margin: 0 1px;
 }
 
 #workspaces button {
     color:      @fg;
 }
 
-#workspaces button.visible {
+#workspaces button.active {
     color:      @pri;
+}
+
+#workspaces button:hover {
     background: @bg-alt;
+    color: @pri;
 }
 
 #workspaces button.urgent {
@@ -138,7 +164,7 @@ window#waybar {
 
 #custom-swaync {
   min-width: 20px;
-  color: @c7;
+  color: @c1;
 }
 
 #custom-spotify {

@@ -1,27 +1,21 @@
 #!/usr/bin/env bash
 
 #xwaylandvideobridge --qwindowtitle xwlvb &
-#/usr/lib/polkit-kde-authentication-agent-1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xdg-desktop-portal-hyprland &
-hypridle &
+
 wlsunset.sh &
 
-hyprpaper &
+swaybg -i ~/.config/wallpaper &
 waybar &
 swaync &
+swayosd-server &
 
-sleep 1
+sleep 2
 
+keepassxc &
 mullvad-vpn &
 qbittorrent &
-#nm-applet &
-#blueman-applet &
-
-steam &
-brave &
-spotify &
-ghostty --title="autostartTerm"
-
-disown
-
-exit
+nm-applet &
+blueman-applet &
+steam -silent &

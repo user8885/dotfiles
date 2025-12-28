@@ -14,10 +14,9 @@
       "niri/window"
     ],
     "modules-center": [
+      "tray",
     ],
     "modules-right": [
-      "tray",
-      "custom/seperator",
       "pulseaudio",
       "custom/seperator",
       "clock",

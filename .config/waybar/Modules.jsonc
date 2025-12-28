@@ -1,38 +1,21 @@
 {
 
- "hyprland/workspaces": {
-     "disable-scroll": false,
-     "all-outputs": true,
-     "warp-on-scroll": true
-//     "format": "{icon}",
-//     "format-icons": {
-//         "1": "",
-//         "2": "",
-//         "3": "",
-//         "4": "󱎓",
-//         "5": "",
-//         "6": "",
-//         "urgent": "",
-//         "focused": "",
-//         "default": ""
-//     },
-//     "persistent-workspaces": {
-//       "HDMI-A-1": [1,2,3,4,5,6]
-//     }
+ "hyprland/window" : {
+     "format": "- {}",
+     "icon": true,
+     "max-length": 50,
  },
 
- "hyprland/window": {
-   "format": "{}",
-   "max-length": 50,
-   "separate-outputs": true,
-   "offscreen-css": true,
-   "offscreen-css-text": "(inactive)",
-   //"rewrite": {
-   //  "(.*) — Mozilla Firefox": " $1",
-   //  "(.*) - fish": "> [$1]",
-   //  "(.*) - zsh": "> [$1]",
-   //  "(.*) - $term": "> [$1]"
-   //}
+ "sway/window" : {
+     "format": "- {}",
+     "icon": true,
+     "max-length": 50,
+ },
+
+ "niri/window" : {
+     "format": "- {}",
+     "icon": true,
+     "max-length": 50,
  },
 
  "idle_inhibitor": {
@@ -44,7 +27,7 @@
  },
 
  "tray": {
-     "icon-size": 21,
+     "icon-size": 18,
      "spacing": 10
  },
 
@@ -94,11 +77,11 @@
  },
 
  "pulseaudio": {
-     // "scroll-step": 1, // %, can be a float
+     "scroll-step": 5, // %, can be a float
      "format": "{icon} {volume}%",
-     "format-bluetooth": "{volume}% {icon} {format_source}",
-     "format-bluetooth-muted": " {icon} {format_source}",
-     "format-muted": "󰖁 {format_source}",
+     "format-bluetooth": "{volume}% {icon}",
+     "format-bluetooth-muted": " {icon}",
+     "format-muted": "󰖁",
      "format-source": " {volume}%",
      "format-source-muted": "",
      "format-icons": {

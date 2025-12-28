@@ -1,5 +1,5 @@
-DMENU="rofi -dmenu"
+DMENU="dmenu.sh"
 DMLOCK="swaylock -l -i ~/.config/wallpaper"
 DMBROWSER="floorp"
-DMEDITOR="ghostty -e ${EDITOR}"
-DMTERM="ghostty"
+DMEDITOR="${MY_TERM} -e ${EDITOR}"
+DMTERM="${MY_TERM}"

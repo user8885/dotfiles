@@ -34,7 +34,7 @@ open = [
 	{ run = 'sw "$@"',                   orphan = true, desc = "Set Wallpaper", for = "linux" },
 ]
 reveal = [
-	{ run = '$TERMINAL_EMULATOR -e sudo yazi',                desc = "Open Yazi here (as root)", for = "linux" },
+	{ run = 'ghostty -e sudo yazi',                orpgan = true, desc = "Open Yazi here (as root)", for = "unix" },
 	{ run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
 ]
 extract = [
