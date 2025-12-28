@@ -146,23 +146,29 @@ keymap = [
 
 	{ on = [ "g", "c", "b" ],       run = "cd ~/.config/bspwm",         desc = "Go to the bspwm config directory" },
 	{ on = [ "g", "c", "c" ],       run = "cd ~/.config",               desc = "Go to the config directory" },
+	{ on = [ "g", "c", "g" ],       run = "cd ~/.config/ghostty",       desc = "Go to the ghostty config directory" },
 	{ on = [ "g", "c", "h" ],       run = "cd ~/.config/hypr",          desc = "Go to the hypr config directory" },
 	{ on = [ "g", "c", "H" ],       run = "cd ~/.config/hyprpanel",     desc = "Go to the hyprpanel config directory" },
+	{ on = [ "g", "c", "l" ],       run = "cd ~/.config/lxqt",          desc = "Go to the lxqt config directory" },
 	{ on = [ "g", "c", "n" ],       run = "cd ~/.config/niri",          desc = "Go to the niri config directory" },
 	{ on = [ "g", "c", "o" ],       run = "cd ~/.config/oh-my-bash/",   desc = "Go to the oh-my-bash config directory" },
 	{ on = [ "g", "c", "p" ],       run = "cd ~/.config/polybar",       desc = "Go to the polybar config directory" },
 	{ on = [ "g", "c", "r" ],       run = "cd ~/.config/rofi",          desc = "Go to the rofi config directory" },
 	{ on = [ "g", "c", "s" ],       run = "cd ~/.config/sxhkd",         desc = "Go to the sxhkd config directory" },
 	{ on = [ "g", "c", "S" ],       run = "cd ~/.config/sway",          desc = "Go to the sway config directory" },
+	{ on = [ "g", "c", "N" ],       run = "cd ~/.config/swaync",        desc = "Go to the swaync config directory" },
 	{ on = [ "g", "c", "w" ],       run = "cd ~/.config/waybar",        desc = "Go to the waybar config directory" },
 	{ on = [ "g", "c", "y" ],       run = "cd ~/.config/yazi",          desc = "Go to the yazi config directory" },
 
+	{ on = [ "g", "." ],            run = "cd ~/dotfiles",              desc = "Go to the downloads directory" },
 	{ on = [ "g", "d" ],            run = "cd ~/Downloads",             desc = "Go to the downloads directory" },
-	{ on = [ "g", "n" ],            run = "cd ~/nix",                   desc = "Go to the nix flake directory" },
 	{ on = [ "g", "p" ],            run = "cd ~/Pictures",              desc = "Go to the downloads directory" },
-	{ on = [ "g", "s" ],            run = "cd ~/suckless",              desc = "Go to the suckless directory" },
 	{ on = [ "g", "t" ],            run = "cd /tmp",                    desc = "Go to the temporary directory" },
 	{ on = [ "g", "<Space>" ],      run = "cd --interactive",           desc = "Go to a directory interactively" },
+
+	{ on = [ "<C-g>", "a" ],        run = "shell 'git add -A && notify-send \"git add success\"'",                 desc = "Git status" },
+	{ on = [ "<C-g>", "p" ],        run = "shell --block 'git push origin main'",                 desc = "Git status" },
+	{ on = [ "<C-g>", "c" ],        run = "shell --block 'git commit'",                 desc = "Git status" },
 
 	# Help
 	{ on = [ "~" ], run = "help", desc = "Open help" },

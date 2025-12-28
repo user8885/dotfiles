@@ -7,26 +7,20 @@
     text-shadow:   none;
     transition-duration: 0s;
     padding: 0 2px;
-    margin-top: 1px;
 }
 
 window#waybar {
-  background: transparent;
-  opacity: 0.65;
+  background: @bg;
   color: @fg;
 }
 
 /*
-.modules-left {
-
+* {
+    margin-top: 1px;
 }
-.modules-center {
-
+window#waybar {
+    background: transparent;
 }
-.modules-right {
-
-}
-*/
 
 .modules-left {
   margin-left: 5;
@@ -42,13 +36,16 @@ window#waybar {
   border-radius: 13px;
 }
 .modules-right {
-  margin-right: 5;
-  padding: 0 10px;
   background: @bg;
   border: 1px solid @pri;
   border-radius: 13px;
 }
+*/
 
+.modules-right {
+  margin-right: 5;
+  padding: 0 10px;
+}
 
 #window {
   color: @fg;
