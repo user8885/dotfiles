@@ -9,9 +9,9 @@
 
     // Choose the order of the modules
     "modules-left": [
-      "niri/workspaces",
+      "hyprland/workspaces",
       "custom/seperator",
-      "niri/window"
+      "hyprland/window"
     ],
     "modules-center": [
       "tray",

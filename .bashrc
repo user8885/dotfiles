@@ -5,19 +5,17 @@ fi
 addToPATH() {
    export PATH=$1:$PATH
 }
-addToPATH ~/.config/emacs/bin
 addToPATH ~/.local/bin
 addToPATH ~/scripts/dm-scripts
-addToPATH ~/.zig
 
 # VI-Mode
 unset -f __main
 set -o vi
 
 # DT color scripts
-#colorscript random
+colorscript random
 
-fastfetch
+#fastfetch
 
 # Starship
 __main() {

@@ -4,8 +4,8 @@ export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/e
 export QT_QPA_PLATFORMTHEME="qt6ct" # Only use when not using kde or anything that configures qt on its own
 
 if [ "$(tty)" = "/dev/tty1" ]; then
-   pgrep niri || niri --session
-   #pgrep Hyprland || Hyprland
+   #pgrep niri || niri --session
+   pgrep Hyprland || Hyprland
    #pgrep sway || sway
 
    #pgrep bspwm || startx ~/.config/bspwm/xinitrc

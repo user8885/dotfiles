@@ -132,7 +132,8 @@
  },
 
  "custom/seperator": {
-   "format": " | "
+   "format": " | ",
+   "tooltip": false,
  },
 
  "custom/hyprversion": {
