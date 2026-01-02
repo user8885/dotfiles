@@ -42,6 +42,7 @@ input {
         natural-scroll
         // accel-speed 0.2
         accel-profile "flat"
+        dwt
         // scroll-method "no-scroll"
     }
 

@@ -14,7 +14,7 @@
 // See the binds section below for more spawn examples.
 // spawn-at-startup "waybar"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-   spawn-sh-at-startup "swaybg -i /usr/share/lxqt/wallpapers/waves-logo.png"
+   spawn-sh-at-startup "swaybg -i ~/.config/wallpaper"
 // The above sets the wallpaper used in the overview.
    spawn-sh-at-startup "lxqt-session && niri msg action quit -s"
 
@@ -56,4 +56,3 @@ include "niri/keybinds.kdl"
 
 spawn-sh-at-startup "xwayland-satellite"
 spawn-sh-at-startup "~/.local/bin/wlsunset.sh"
-

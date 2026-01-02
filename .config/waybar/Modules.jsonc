@@ -32,7 +32,7 @@
  },
 
    "clock": {
-     "format": "󰥔 {:%a, %m-%d (%R)}",
+     "format": "󰥔  {:%a, %m-%d (%R)}",
      "tooltip-format": "<tt><small>{calendar}</small></tt>",
      "calendar": {
          "mode"          : "month",
@@ -78,7 +78,7 @@
 
  "pulseaudio": {
      "scroll-step": 5, // %, can be a float
-     "format": "{icon} {volume}%",
+     "format": "{icon}  {volume}%",
      "format-bluetooth": "{volume}% {icon}",
      "format-bluetooth-muted": " {icon}",
      "format-muted": "󰖁",

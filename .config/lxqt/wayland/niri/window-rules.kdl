@@ -44,9 +44,3 @@ window-rule {
     // Use this instead if you want them visible on third-party screenshot tools.
     // block-out-from "screencast"
 }
-
-// enable rounded corners for all windows.
-/-window-rule {
-    geometry-corner-radius 3
-    clip-to-geometry true
-}

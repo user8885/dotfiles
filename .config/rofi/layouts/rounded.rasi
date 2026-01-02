@@ -9,7 +9,7 @@
  *******************************************************************************/
 
 * {
-    font:               "Ubuntu 12";
+    font:               "NotoSansM Nerd Font 12";
     background-color:   transparent;
     text-color:         @fg;
     margin:             0px;

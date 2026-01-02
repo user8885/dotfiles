@@ -4,6 +4,7 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
 environment {
+    QT_QPA_PLATFORMTHEME "qt6ct"
     ELECTRON_OZONE_PLATFORM_HINT "auto" // Fix for some electron apps
     DISPLAY ":0" // Neccesary for xwayland-satellite
 }
@@ -353,7 +354,7 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     geometry-corner-radius 3
     clip-to-geometry true
 }
