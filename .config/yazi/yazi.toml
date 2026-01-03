@@ -27,7 +27,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 [opener]
 edit = [
 	{ run = '$EDITOR "$@"', desc = "$EDITOR", block = true, for = "unix" },
-	{ run = 'sudo $EDITOR "$@"', desc = "$EDITOR (as root)", block = true, for = "unix" },
+	{ run = 'sudoedit "$@"', desc = "$EDITOR (as root)", block = true, for = "unix" },
 ]
 open = [
 	{ run = 'imv "$@"',               orphan = true, desc = "Open", for = "linux" },

@@ -10,7 +10,7 @@
 
 * {
     font:               "NotoSansM Nerd Font 12";
-    background-color:   transparent;
+    background-color:   @bg;
     text-color:         @fg;
     margin:             0px;
     padding:            0px;
@@ -30,7 +30,7 @@ mainbox {
 }
 
 inputbar {
-    background-color:   @bg-alt;
+    background-color:   @bg;
     border-color:       @pri;
     border:             2px;
     border-radius:      16px;
@@ -51,8 +51,8 @@ entry {
 message {
     margin:             12px 0 0;
     border-radius:      16px;
-    border-color:       @bg-alt;
-    background-color:   @bg-alt;
+    border-color:       @bg;
+    background-color:   @bg;
 }
 
 textbox {
@@ -81,7 +81,7 @@ element selected normal, element selected active {
     border-color:       @pri;
     border:             2px;
     border-radius:      16px;
-    background-color:   @bg-alt;
+    background-color:   @bg;
 }
 
 element-icon {

@@ -55,7 +55,7 @@ alias ac="ani-cli -v"
 alias db="distrobox"
 alias v="nvim"
 alias v.="nvim ."
-alias sv="sudo nvim"
+alias sv="sudoedit"
 
 #Lazy alias
 alias grep='grep --color=auto'
