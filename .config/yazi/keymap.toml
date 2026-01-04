@@ -168,9 +168,17 @@ keymap = [
 	{ on = [ "g", "t" ],            run = "cd /tmp",                    desc = "Go to the temporary directory" },
 	{ on = [ "g", "<Space>" ],      run = "cd --interactive",           desc = "Go to a directory interactively" },
 
-    # git
-	{ on = [ "m", "g", "a" ],       run = "shell 'git add -A && notify-send \"git add success\"'",                 desc = "git add -A" },
-	{ on = [ "m", "g", "p" ],       run = "shell --block 'git push origin main'",                                  desc = "git push origin main" },
+    # m+g git
+	{ 
+        on = [ "m", "g", "a" ],
+        run = "shell 'git add -A && notify-send \"git add success\"'",
+        desc = "git add -A"
+    },
+	{ 
+        on = [ "m", "g", "p" ],       
+        run = "shell --block 'git push origin main && notify-send \"git push success\"'",
+        desc = "git push origin main" 
+    },
 	{ on = [ "m", "g", "c" ],       run = "shell --block 'git commit'",                                            desc = "git commit" },
 	{ on = [ "m", "g", "s" ],       run = "shell --block 'git status | less'",                                     desc = "git status | less" },
 
